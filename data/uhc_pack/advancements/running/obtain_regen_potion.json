@@ -1,0 +1,44 @@
+{
+    "criteria": {
+      "regeneration": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "potion": "minecraft:regeneration"
+            }
+          ]
+        }
+      },
+      "long_regeneration": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "potion": "minecraft:long_regeneration"
+            }
+          ]
+        }
+      },
+      "strong_regeneration": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "potion": "minecraft:strong_regeneration"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "regeneration",
+        "long_regeneration",
+        "strong_regeneration"
+      ]
+    ],
+    "rewards": {
+      "function": "uhc_pack:running/regen_potions/on_obtain"
+    }
+  }

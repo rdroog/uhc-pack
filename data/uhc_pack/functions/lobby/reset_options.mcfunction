@@ -18,7 +18,8 @@ scoreboard players set UHCMM uhcEnabled 1
 scoreboard players set UHCDiaChest uhcEnabled 1
 scoreboard players set UHCEter uhcEnabled 1
 scoreboard players set UHCGlow uhcEnabled 1
-scoreboard players set UHCPotion uhcEnabled 1
+scoreboard players set UHCStrongPotion uhcEnabled 1
+scoreboard players set UHCRegenPotion uhcEnabled 1
 scoreboard players set UHCStew uhcEnabled 1
 scoreboard players set UHCPassive uhcEnabled 1
 scoreboard players set UHCPhantom uhcEnabled 1
@@ -35,7 +36,8 @@ data modify storage uhc_pack:text Icon.Marker set from storage uhc_pack:text Ico
 data modify storage uhc_pack:text Icon.DiamondChestplate set from storage uhc_pack:text Icon.Enabled
 data modify storage uhc_pack:text Icon.Eternal set from storage uhc_pack:text Icon.Enabled
 data modify storage uhc_pack:text Icon.Glow set from storage uhc_pack:text Icon.Enabled
-data modify storage uhc_pack:text Icon.Potion set from storage uhc_pack:text Icon.Enabled
+data modify storage uhc_pack:text Icon.StrongPotion set from storage uhc_pack:text Icon.Enabled
+data modify storage uhc_pack:text Icon.RegenPotion set from storage uhc_pack:text Icon.Enabled
 data modify storage uhc_pack:text Icon.Stew set from storage uhc_pack:text Icon.Enabled
 data modify storage uhc_pack:text Icon.Passive set from storage uhc_pack:text Icon.Enabled
 data modify storage uhc_pack:text Icon.Phantom set from storage uhc_pack:text Icon.Enabled
