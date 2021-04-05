@@ -13,4 +13,4 @@ tag @s remove playing
 execute at @s run spawnpoint @s ~ ~ ~
 
 # Play a death sound
-execute as @a at @s run playsound minecraft:item.totem.use player @s ~ ~ ~ 0.5 2 0.5
+execute as @a at @s run playsound minecraft:item.totem.use player @s ~ ~ ~ 0.3 0.5 0.5
