@@ -44,7 +44,7 @@ the awards using `/function uhc_pack:awards/reveal`.
   eventual border size.
 * *Minute markers* - To help keep track of time, minute markers can be configured.
 * *Late game options* - Encourage teams to engage in PVP by triggering external day and glowing effects.
-* *Buffs and Nerfs* - Control the balance of your UHC using toggles for whether strong potions or suspicious stews are allowed.
+* *Buffs and Nerfs* - Control the balance of your UHC using toggles for whether strong potions, tier 1 regeneration potions or suspicious stews are allowed.
 * *Extensible* - Event triggers are available to allow other datapacks to plugin to UHC to further customize the experience.
 
 ### Configuration options

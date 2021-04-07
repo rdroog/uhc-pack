@@ -150,11 +150,18 @@ execute if score @s[tag=admin] uhcOpt matches 108 if score UHCMM uhcEnabled matc
 execute if score @s[tag=admin] uhcOpt matches 108 if score UHCMM uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Minute marker","color":"aqua"},{"text":" is "},{"text":"Disabled","color":"red"}]
 
 # 109 - Toggle Strong Potions
-execute if score @s[tag=admin] uhcOpt matches 109 run execute store success score UHCPotion uhcEnabled run execute if score UHCPotion uhcEnabled matches 0
-execute if score UHCPotion uhcEnabled matches 1 run data modify storage uhc_pack:text Icon.Potion set from storage uhc_pack:text Icon.Enabled
-execute if score UHCPotion uhcEnabled matches 0 run data modify storage uhc_pack:text Icon.Potion set from storage uhc_pack:text Icon.Disabled
-execute if score @s[tag=admin] uhcOpt matches 109 if score UHCPotion uhcEnabled matches 1 run tellraw @a [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Strong potions","color":"aqua"},{"text":" are "},{"text":"Enabled","color":"dark_green"}]
-execute if score @s[tag=admin] uhcOpt matches 109 if score UHCPotion uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Strong potions","color":"aqua"},{"text":" are "},{"text":"Disabled","color":"red"}]
+execute if score @s[tag=admin] uhcOpt matches 109 run execute store success score UHCStrongPotion uhcEnabled run execute if score UHCStrongPotion uhcEnabled matches 0
+execute if score UHCStrongPotion uhcEnabled matches 1 run data modify storage uhc_pack:text Icon.StrongPotion set from storage uhc_pack:text Icon.Enabled
+execute if score UHCStrongPotion uhcEnabled matches 0 run data modify storage uhc_pack:text Icon.StrongPotion set from storage uhc_pack:text Icon.Disabled
+execute if score @s[tag=admin] uhcOpt matches 109 if score UHCStrongPotion uhcEnabled matches 1 run tellraw @a [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Strong potions","color":"aqua"},{"text":" are "},{"text":"Enabled","color":"dark_green"}]
+execute if score @s[tag=admin] uhcOpt matches 109 if score UHCStrongPotion uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Strong potions","color":"aqua"},{"text":" are "},{"text":"Disabled","color":"red"}]
+
+# 119 - Toggle Regeneration Potions
+execute if score @s[tag=admin] uhcOpt matches 119 run execute store success score UHCRegenPotion uhcEnabled run execute if score UHCRegenPotion uhcEnabled matches 0
+execute if score UHCRegenPotion uhcEnabled matches 1 run data modify storage uhc_pack:text Icon.RegenPotion set from storage uhc_pack:text Icon.Enabled
+execute if score UHCRegenPotion uhcEnabled matches 0 run data modify storage uhc_pack:text Icon.RegenPotion set from storage uhc_pack:text Icon.Disabled
+execute if score @s[tag=admin] uhcOpt matches 119 if score UHCRegenPotion uhcEnabled matches 1 run tellraw @a [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"T1 regen potions","color":"aqua"},{"text":" are "},{"text":"Enabled","color":"dark_green"}]
+execute if score @s[tag=admin] uhcOpt matches 119 if score UHCRegenPotion uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"T1 regen potions","color":"aqua"},{"text":" are "},{"text":"Disabled","color":"red"}]
 
 # 110 - Toggle Suspicious Stew
 execute if score @s[tag=admin] uhcOpt matches 110 run execute store success score UHCStew uhcEnabled run execute if score UHCStew uhcEnabled matches 0
